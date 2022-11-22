@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.control.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="MainVBox" prefHeight="642.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.project.FXController.MainController">
+   <children>
+      <Pane prefHeight="30.0" prefWidth="800.0" style="-fx-background-color: #2596be;">
+         <children>
+            <Button fx:id="exit_button" contentDisplay="CENTER" layoutX="745.0" layoutY="1.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="24.0" prefWidth="26.0" style="-fx-border-color: #000; -fx-border-radius: 5; -fx-background-radius: 5;" text="X" textFill="RED">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <HBox prefHeight="500.0" prefWidth="800.0" VBox.vgrow="NEVER">
+         <children>
+            <AnchorPane prefHeight="574.0" prefWidth="237.0" style="-fx-background-color: #abcdef;" HBox.hgrow="NEVER">
+               <children>
+                  <Button fx:id="home_button" alignment="BASELINE_LEFT" layoutY="79.0" mnemonicParsing="false" onAction="#homeButtonOnAction" prefHeight="43.0" prefWidth="237.0" style="-fx-background-color: #0ab; -fx-background-radius: 5;" text="                  Home" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="scanner_button" alignment="BASELINE_LEFT" layoutY="122.0" mnemonicParsing="false" onAction="#scannerButtonOnAction" prefHeight="43.0" prefWidth="237.0" style="-fx-background-radius: 5;" text="                  IP Scanner" textFill="#00aabb">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon fill="WHITE" fontSmoothingType="LCD" glyphName="HOME" layoutX="23.0" layoutY="109.0" size="20" AnchorPane.bottomAnchor="502.5714282989502" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="186.7142848968506" AnchorPane.topAnchor="88.4285717010498" />
+                  <FontAwesomeIcon fill="#00aabb" fontSmoothingType="LCD" glyphName="SEARCH" layoutX="24.0" layoutY="150.0" size="20" />
+                  <Button fx:id="penetrationtesting_button" alignment="BASELINE_LEFT" layoutY="251.0" mnemonicParsing="false" onAction="#penetrationtestingButtonOnAction" prefHeight="43.0" prefWidth="237.0" style="-fx-background-color: #0ab; -fx-background-radius: 5;" text="                  Penetration Testing" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="stressTesting_button" alignment="BASELINE_LEFT" layoutY="294.0" mnemonicParsing="false" onAction="#stresstestingButtonOnAction" prefHeight="43.0" prefWidth="237.0" style="-fx-background-radius: 5;" text="                  Stress Testing" textFill="#00aabb">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="windowsh_button" alignment="BASELINE_LEFT" layoutY="337.0" mnemonicParsing="false" onAction="#windowshButtonOnAction" prefHeight="43.0" prefWidth="237.0" style="-fx-background-color: #0ab;" text="                  Windows Hardening" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="linuxh_button" alignment="BASELINE_LEFT" layoutY="380.0" mnemonicParsing="false" onAction="#linuxhButtonOnAction" prefHeight="43.0" prefWidth="237.0" style="-fx-background-radius: 5;" text="                  Linux Hardening" textFill="#00aabb">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon fill="WHITE" fontSmoothingType="LCD" glyphName="STETHOSCOPE" layoutX="26.0" layoutY="279.0" size="20" />
+                  <FontAwesomeIcon fill="WHITE" fontSmoothingType="LCD" glyphName="WINDOWS" layoutX="24.0" layoutY="367.0" size="20" text="" />
+                  <FontAwesomeIcon fill="#00aabb" fontSmoothingType="LCD" glyphName="LINUX" layoutX="25.0" layoutY="408.0" size="20" />
+                  <Button fx:id="aboutusButton" alignment="BASELINE_LEFT" layoutY="558.0" mnemonicParsing="false" onAction="#aboutusButtonOnAction" prefHeight="43.0" prefWidth="237.0" style="-fx-background-radius: 5;" text="                  About Us" textFill="#00aabb">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="reportbutton" alignment="BASELINE_LEFT" layoutY="515.0" mnemonicParsing="false" onAction="#reportbuttonButtonOnAction" prefHeight="43.0" prefWidth="237.0" style="-fx-background-color: #0ab; -fx-background-radius: 5;" text="                  Create Report" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon fill="WHITE" fontSmoothingType="LCD" glyphName="CLIPBOARD" layoutX="23.0" layoutY="545.0" size="20" />
+                  <FontAwesomeIcon fill="#00aabb" fontSmoothingType="LCD" glyphName="USER" layoutX="23.0" layoutY="588.0" size="20" />
+                  <Button fx:id="portscanner_button" alignment="BASELINE_LEFT" layoutY="165.0" mnemonicParsing="false" onAction="#portscannerButtonOnAction" prefHeight="43.0" prefWidth="237.0" style="-fx-background-color: #0ab; -fx-background-radius: 5;" text="                  PortScanner" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="vulnerabilityScannerButton" alignment="BASELINE_LEFT" layoutY="208.0" mnemonicParsing="false" onAction="#vulnerabilityscannerButtonOnAction" prefHeight="43.0" prefWidth="237.0" style="-fx-background-radius: 5;" text="                  Vulnerability Scanner" textFill="#00aabb">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon fill="#00aabb" glyphName="BUG" layoutX="24.0" layoutY="236.0" size="20" />
+                  <FontAwesomeIcon fill="#00aabb" glyphName="LAPTOP" layoutX="20.0" layoutY="322.0" size="20" />
+                  <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" layoutX="23.0" layoutY="193.0" size="20" />
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="595.0" prefWidth="564.0" HBox.hgrow="NEVER">
+               <children>
+                  <AnchorPane prefHeight="611.0" prefWidth="563.0" style="-fx-background-color: #fff;" HBox.hgrow="NEVER">
+                     <children>
+                        <StackPane fx:id="StackPane" layoutX="9.0" prefHeight="611.0" prefWidth="556.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane fx:id="portscannerPane" prefHeight="611.0" prefWidth="542.0" style="-fx-background-color: #abcdef;">
+                                 <children>
+                                    <Label layoutX="45.0" layoutY="33.0" prefHeight="43.0" prefWidth="237.0" text="IP Address " textFill="#2c0000">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="portscanner_ipaddress_TextField" layoutX="45.0" layoutY="76.0" prefHeight="28.0" prefWidth="237.0" promptText="127.0.0.1" style="-fx-border-color: #0ab; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                                    <Label layoutX="331.0" layoutY="27.0" prefHeight="43.0" prefWidth="237.0" text="CIDR Mask" textFill="#2c0000">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="45.0" layoutY="192.0" prefHeight="43.0" prefWidth="237.0" text="Scanner Type" textFill="#2c0000">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="portscanner_scannerType_choicebox" layoutX="45.0" layoutY="235.0" prefHeight="28.0" prefWidth="191.0" style="-fx-border-color: #0ab; -fx-background-radius: 5; -fx-border-radius: 5;" />
+                                    <Label layoutX="48.0" layoutY="111.0" prefHeight="43.0" prefWidth="185.0" text="Port Number" textFill="#2c0000">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="portscanner_startScanner_button" layoutX="334.0" layoutY="214.0" mnemonicParsing="false" onAction="#portscanner_startScannerButtonOnAction" prefHeight="43.0" prefWidth="185.0" style="-fx-background-color: #0ab; -fx-background-radius: 5; -fx-border-color: #fff; -fx-border-radi: 5;" text="Start" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="portscanner_stopScanner_button" layoutX="334.0" layoutY="277.0" mnemonicParsing="false" onAction="#portscanner_stopScannerButtonOnAction" prefHeight="43.0" prefWidth="185.0" style="-fx-background-color: #0AB; -fx-background-radius: 5; -fx-border-color: #fff; -fx-border-radius: 5;" text="Stop" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <TextArea fx:id="portscanner_output_textArea" editable="false" layoutX="36.0" layoutY="338.0" prefHeight="250.0" prefWidth="482.0" promptText="cmd:" style="-fx-background-radius: 5; -fx-border-color: #0ab; -fx-border-radius: 5;" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="PLAY" layoutX="355.0" layoutY="242.0" size="20" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="STOP" layoutX="354.0" layoutY="305.0" size="20" />
+                                    <ChoiceBox fx:id="portscanner_mask_choicebox" layoutX="331.0" layoutY="76.0" prefHeight="28.0" prefWidth="191.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #0ab;" />
+                                    <Label alignment="CENTER" layoutX="151.0" layoutY="148.0" prefHeight="43.0" prefWidth="16.0" text="-">
+                                       <font>
+                                          <Font name="Calibri Bold" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="portscanner_portnumberFirst_TextField" layoutX="45.0" layoutY="155.0" prefHeight="28.0" prefWidth="106.0" promptText="1" style="-fx-border-color: #0ab; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                                    <TextField fx:id="portscanner_portnumberSecond_TextField" layoutX="172.0" layoutY="155.0" prefHeight="28.0" prefWidth="112.0" promptText="65535" style="-fx-border-color: #0ab; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                                    <Label alignment="CENTER" layoutX="292.0" layoutY="69.0" prefHeight="43.0" prefWidth="28.0" text="/">
+                                       <font>
+                                          <Font name="Calibri Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="scannerPane" prefHeight="611.0" prefWidth="542.0" style="-fx-background-color: #abcdef;">
+                                 <children>
+                                    <Label layoutX="45.0" layoutY="33.0" prefHeight="43.0" prefWidth="237.0" text="IP Address" textFill="#2c0000">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="ipscanner_ipaddress_TextField" layoutX="45.0" layoutY="76.0" prefHeight="28.0" prefWidth="237.0" promptText="127.0.0.1" style="-fx-border-color: #0ab; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                                    <Label layoutX="331.0" layoutY="27.0" prefHeight="43.0" prefWidth="237.0" text="CIDR Mask" textFill="#2c0000">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="45.0" layoutY="121.0" prefHeight="43.0" prefWidth="237.0" text="Scanner Type" textFill="#2c0000">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="ipscanner_scannerType_choicebox" layoutX="45.0" layoutY="164.0" prefHeight="28.0" prefWidth="191.0" style="-fx-border-color: #0ab; -fx-background-radius: 5; -fx-border-radius: 5;" />
+                                    <Button fx:id="ipscanner_startScanner_button" layoutX="334.0" layoutY="214.0" mnemonicParsing="false" onAction="#ipscanner_startScannerButtonOnAction" prefHeight="43.0" prefWidth="185.0" style="-fx-background-color: #0ab; -fx-background-radius: 5; -fx-border-color: #fff; -fx-border-radi: 5;" text="Start" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="ipscanner_stopScanner_button" layoutX="334.0" layoutY="277.0" mnemonicParsing="false" onAction="#ipscanner_stopScannerButtonOnAction" prefHeight="43.0" prefWidth="185.0" style="-fx-background-color: #0AB; -fx-background-radius: 5; -fx-border-color: #fff; -fx-border-radius: 5;" text="Stop" textFill="WHITE">
+                                       <font>
+                                          <Font name="Calibri Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <TextArea fx:id="ipscanner_output_textArea" editable="false" layoutX="36.0" layoutY="338.0" prefHeight="250.0" prefWidth="482.0" promptText="cmd:" style="-fx-background-radius: 5; -fx-border-color: #0ab; -fx-border-radius: 5;" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="PLAY" layoutX="355.0" layoutY="242.0" size="20" />
+                                    <FontAwesomeIcon fill="WHITE" glyphName="STOP" layoutX="354.0" layoutY="305.0" size="20" />
+                                    <ChoiceBox fx:id="ipscanner_mask_choicebox" layoutX="331.0" layoutY="76.0" prefHeight="28.0" prefWidth="191.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #0ab;" />
+                                    <Label alignment="CENTER" layoutX="292.0" layoutY="69.0" prefHeight="43.0" prefWidth="28.0" text="/">
+                                       <font>
+                                          <Font name="Calibri Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="homePane" prefHeight="608.0" prefWidth="513.0" style="-fx-background-color: #ffd;">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="114.0" layoutY="14.0" prefHeight="43.0" prefWidth="361.0" text="WELCOME TO HOME PAGE">
+                                       <font>
+                                          <Font name="Calibri Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextArea editable="false" layoutX="26.0" layoutY="59.0" prefHeight="522.0" prefWidth="501.0" text="                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. &#10;Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when &#10; specimen book. It has survived not only five centuries, but also the leap into electronic&#10; typesetting, remaining essentially unchanged. It was popularised in the 1960s with the&#10; release of Letraset sheets containing Lorem Ipsum passages, and more recently with &#10;desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&#10;&#10;&#10;                Lorem Ipsum is simply dummy text of the printing and typesetting industry. &#10;Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when &#10; specimen book. It has survived not only five centuries, but also the leap into electronic&#10; typesetting, remaining essentially unchanged. It was popularised in the 1960s with the&#10; release of Letraset sheets containing Lorem Ipsum passages, and more recently with &#10;desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&#10;&#10;&#10;                Lorem Ipsum is simply dummy text of the printing and typesetting industry. &#10;Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when &#10; specimen book. It has survived not only five centuries, but also the leap into electronic&#10; typesetting, remaining essentially unchanged. It was popularised in the 1960s with the&#10; release of Letraset sheets containing Lorem Ipsum passages, and more recently with &#10;desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&#10;              &#10;        Lorem Ipsum is simply dummy text of the printing and typesetting industry. &#10;Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when &#10; specimen book. It has survived not only five centuries, but also the leap into electronic&#10; typesetting, remaining essentially unchanged. &#10;" />
+                                 </children></AnchorPane>
+                              <AnchorPane fx:id="vulnerabilityPane" prefHeight="599.0" prefWidth="513.0" style="-fx-background-color: #ffd;" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
